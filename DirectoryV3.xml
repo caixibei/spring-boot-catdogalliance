@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <trees>
+     <tree path="/src/main/java/tsai/spring/boot/features/menu" title="菜单管理"/>
+     <tree path="/src/main/java/tsai/spring/boot/features/user" title="用户管理"/>
+ </trees>
