@@ -1,4 +1,6 @@
 package tsai.spring.boot.features.user.service;
-public interface UserService {
+import com.github.yulichang.base.MPJBaseService;
+import tsai.spring.boot.features.user.pojo.User;
+public interface UserService extends MPJBaseService<User> {
 
 }
