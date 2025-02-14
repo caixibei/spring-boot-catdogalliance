@@ -14,6 +14,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
+        <jasypt.version>3.0.2</jasypt.version>
         <tsai.version>2.1.0-SNAPSHOT</tsai.version>
     </properties>
 
@@ -40,6 +41,12 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+        <!--加密工具-->
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+        </dependency>
+
         <!--自己封装的开源组件-->
         <dependency>
             <groupId>com.tsaiframework.boot</groupId>
@@ -61,6 +68,12 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!--jasypt-spring-boot-starter-->
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt.version}</version>
             </dependency>
             <!--tsai-spring-starter-->
             <dependency>
